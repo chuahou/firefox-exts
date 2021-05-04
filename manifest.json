@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "Personal Extension Scripts",
-	"version": "0.1.0.0",
+	"version": "0.1.1.0",
 
 	"description": "Custom scripts for specific webpages",
 
@@ -9,6 +9,10 @@
 		{
 			"matches": ["https://login.microsoftonline.com/common/oauth2/logout"],
 			"js": ["scripts/outlook-logout.js"]
+		},
+		{
+			"matches": ["*://steamcommunity.com/stats/*/achievements/"],
+			"js": ["scripts/steam-achievement-regex.js"]
 		}
 	]
 }
