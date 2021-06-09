@@ -1,13 +1,13 @@
 {
 	"manifest_version": 2,
 	"name": "Personal Extension Scripts",
-	"version": "0.1.2.0",
+	"version": "0.1.2.1",
 
 	"description": "Custom scripts for specific webpages",
 
 	"content_scripts": [
 		{
-			"matches": ["https://login.microsoftonline.com/common/oauth2/logout"],
+			"matches": ["https://ccs.login.microsoftonline.com/ccs/common/oauth2/logout"],
 			"js": ["scripts/outlook-logout.js"]
 		},
 		{
