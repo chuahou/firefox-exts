@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "Personal Extension Scripts",
-	"version": "0.1.5.0",
+	"version": "0.1.6.1",
 
 	"description": "Custom scripts for specific webpages",
 
@@ -19,7 +19,11 @@
 		},
 		{
 			"matches": ["https://booru.chuahou.dev/uploads/*"],
-			"js": ["scripts/booru.js"]
+			"js": ["scripts/booru-rating.js"]
+		},
+		{
+			"matches": ["https://booru.chuahou.dev/posts/*"],
+			"js": ["scripts/booru-copy.js"]
 		}
 	]
 }
