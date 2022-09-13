@@ -1,0 +1,7 @@
+span[class^=blockedAction] {
+	display: none;
+}
+
+div[class^=blockedMessageText]::after {
+	content: "NO U";
+}
