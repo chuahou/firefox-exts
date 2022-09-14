@@ -5,3 +5,7 @@ span[class^=blockedAction] {
 div[class^=blockedMessageText]::after {
 	content: "NO U";
 }
+
+div[class^=groupStart] {
+	opacity: 10%;
+}
