@@ -1,15 +1,9 @@
 {
 	"manifest_version": 2,
 	"name": "Personal Extension Scripts",
-	"version": "0.1.7.1",
+	"version": "0.1.8.0",
 
 	"description": "Custom scripts for specific webpages",
-
-	"options_ui": { "page": "options/options.html" },
-	"permissions": ["storage"],
-	"browser_specific_settings": { "gecko": {
-		"id": "{d3da486f-1d4b-477b-87ca-307c843e59e1}"
-	} },
 
 	"content_scripts": [
 		{
@@ -30,11 +24,6 @@
 		{
 			"matches": ["https://booru.chuahou.dev/posts/*"],
 			"js": ["scripts/booru-copy.js"]
-		},
-		{
-			"matches": ["https://discord.com/channels/*"],
-			"css": ["css/discord-block.css"],
-			"js": ["scripts/discord-block.js"]
 		}
 	]
 }
